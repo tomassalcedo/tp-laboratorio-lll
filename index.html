@@ -4,175 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>Inmobilaria</title>
+    <title>Inmobiliaria</title>
 </head>
 
 <body>
 
-    <header>
-
-        <div class="barra">
-            <img src="./images/logo.svg" alt="">
+    <header class="bg-dark text-white py-3">
+        <div class="container-fluid">
+            <div class="logo d-flex">
+                <img src="./images/logo.svg" alt="" class="mr-3">
+            </div>
             <nav>
-                <ul>
-                    <li><a class="link" href="#">Nosotros</a></li>
-                    <li><a class="link" href="#">Anuncios</a></li>
-                    <li><a class="link" href="#">Blog</a></li>
-                    <li><a class="link" href="#">Contacto</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Anuncios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
                 </ul>
             </nav>
+            
         </div>
-
-
-        <h1>Venta de casas y departamentos Exclusivos de lujo</h1>
+        <h1 class="main-tittle">Venta de casas y departamentos Exclusivos de lujo</h1>
     </header>
 
-    <div class="container-sections">
+    <div class="container my-4">
         <section class="nosotros">
-            <h2>Más sobre nosotros</h2>
+            <h2 class="text-center text-muted my-4">Más sobre nosotros</h2>
 
-            <div class="container-details">
-                <div class="container-detail">
-                    <img src="./images/icono1.svg" alt="Icono seguridad">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="./images/icono1.svg" alt="Icono seguridad" class="img-fluid mb-3">
                     <h3>Seguridad</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cupiditate maiores dicta
-                        repudiandae, eius a culpa, iure quae veritatis nihil rerum deserunt porro facilis praesentium
-                        vel reprehenderit repellendus voluptate doloribus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis cupiditate maiores dicta repudiandae, eius a culpa, iure quae veritatis nihil rerum deserunt porro facilis praesentium vel reprehenderit repellendus voluptate doloribus!</p>
                 </div>
 
-
-                <div class="container-detail">
-                    <img src="./images/icono2.svg" alt="Icono precio">
+                <div class="col-md-4 text-center">
+                    <img src="./images/icono2.svg" alt="Icono precio" class="img-fluid mb-3">
                     <h3>Mejor precio</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique natus aut beatae
-                        adipisci, corrupti, repudiandae saepe rem magni molestiae iste earum repellat totam architecto,
-                        temporibus eius qui nam exercitationem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente similique natus aut beatae adipisci, corrupti, repudiandae saepe rem magni molestiae iste earum repellat totam architecto, temporibus eius qui nam exercitationem.</p>
                 </div>
 
-
-                <div class="container-detail">
-                    <img src="./images/icono3.svg" alt="Icono tiempo">
+                <div class="col-md-4 text-center">
+                    <img src="./images/icono3.svg" alt="Icono tiempo" class="img-fluid mb-3">
                     <h3>A tiempo</h3>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, minus sed? Expedita temporibus
-                    quisquam, quam blanditiis, earum velit qui adipisci iusto rerum consectetur tempore quia, ducimus
-                    dignissimos pariatur recusandae nulla!
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, minus sed? Expedita temporibus quisquam, quam blanditiis, earum velit qui adipisci iusto rerum consectetur tempore quia, ducimus dignissimos pariatur recusandae nulla!</p>
                 </div>
             </div>
-
         </section>
 
-
-        <section class="catalogo">
-            <h2>Casas y departamentos en venta</h2>
-            <div class="catalogo-contains">
-
-                <div class="catalogo-contain">
-                    <img src="./images/anuncio1.jpg" alt="Icono tiempo">
-                    <h3>Casa de lujo en el lago</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae eaque obcaecati. Aperiam
-                        voluptatibus facere eos error, quibusdam distinctio blanditiis ducimus suscipit dolorem odio,
-                        quaerat voluptas totam quo atque quos?</p>
-                    <b>$3500</b>
-
+        <section class="catalogo my-5">
+            <h2 class="text-center">Casas y departamentos en venta</h2>
+            <div class="row">
+              
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/anuncio1.jpg" class="card-img-top" alt="Casa de lujo en el lago">
+                        <div class="card-body">
+                            <h3 class="card-title">Casa de lujo en el lago</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor molestiae eaque obcaecati. Aperiam voluptatibus facere eos error, quibusdam distinctio blanditiis ducimus suscipit dolorem odio, quaerat voluptas totam quo atque quos?</p>
+                            
+                            <a href="#" class="btn btn-warning text-white mt-3">Ver propiedad</a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="catalogo-contain">
-                    <img src="/images/anuncio2.jpg" alt="Icono tiempo">
-                    <h3>Casa terminados de lujo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex a exercitationem quo
-                        incidunt et
-                        fuga libero? Facilis temporibus consectetur modi earum, alias nisi assumenda accusantium, rem
-                        delectus nihil iste?</p>
-                    <b>$3200</b>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/anuncio2.jpg" class="card-img-top" alt="Casa terminados de lujo">
+                        <div class="card-body">
+                            <h3 class="card-title">Casa terminados de lujo</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ex a exercitationem quo incidunt et fuga libero? Facilis temporibus consectetur modi earum, alias nisi assumenda accusantium, rem delectus nihil iste?</p>
+                            
+                            <a href="#" class="btn btn-warning text-white mt-3">Ver propiedad</a>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="catalogo-contain">
-                    <img src="./images/anuncio3.jpg" alt="Icono tiempo">
-                    <h3>Casa con pileta</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro, dolor ut distinctio
-                        adipisci
-                        minus architecto. Repellendus dolorum repellat accusamus! Hic, reprehenderit sit est perferendis
-                        rerum similique assumenda error inventore.</p>
-                    <b>$1200</b>
+        
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./images/anuncio3.jpg" class="card-img-top" alt="Casa con pileta">
+                        <div class="card-body">
+                            <h3 class="card-title">Casa con pileta</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus porro, dolor ut distinctio adipisci minus architecto. Repellendus dolorum repellat accusamus! Hic, reprehenderit sit est perferendis rerum similique assumenda error inventore.</p>
+                            
+                            <a href="#" class="btn btn-warning text-white mt-3">Ver propiedad</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- <button class="btn">Ver todos</button> -->
-
-
-
-
         </section>
-
-        <section class="banner">
-            <h2>Encuentra la casa de tus sueños</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptatum veniam, aspernatur similique
-                nesciunt aperiam illo iste ab id? Ratione provident recusandae atque quaerat nobis corrupti obcaecati
-                sit impedit enim.</p>
-            <button class="btn-contacto">Contactanos</button>
-
-
-        </section>
-        <h2 class="blog-title">Nuestro Blog</h2>
-        <section class="blog">
-
-            <div class="blog-contain">
-
-                <img src="./images/blog1.jpg" alt="Icono tiempo">
-                <div class="blog-text">
-                    <h3>Terraza en el techo de tu casa</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur cum ratione tempore
-                        obcaecati ipsum iure veniam saepe natus ducimus alias quo at pariatur, nihil illo accusantium
-                        rerum ea aspernatur. Autem?</p>
-                </div>
-
-
-
-            </div>
-            <div class="blog-contain">
-                <img src="./images/blog2.jpg" alt="Icono tiempo">
-                <div class="blog-text">
-                    <h3>Guia para la decoración de tu hogar</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti molestias eum tempore
-                        voluptatem
-                        amet rerum, expedita pariatur. Eius totam similique hic praesentium dolorum voluptates ipsum
-                        libero
-                        ex, a eveniet debitis?</p>
-                </div>
-
-            </div>
-            <div class="blog-contain">
-                <h2>Comentarios</h2>
-                <img src="./images/blog1.jpg" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos officiis earum unde cupiditate
-                    corrupti eum doloribus iusto cumque minus tempore quis sequi, quas numquam placeat consectetur
-                    tempora molestiae, sit possimus.</p>
-            </div>
-
-
-        </section>
-
     </div>
 
+    <section class="banner text-white  d-flex flex-column justify-content-center align-items-center">
+        <h2>Encuentra la casa de tus sueños</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptatum veniam, aspernatur similique nesciunt aperiam illo iste ab id? Ratione provident recusandae atque quaerat nobis corrupti obcaecati sit impedit enim.</p>
+        <button class="btn btn-warning mt-3">Contactanos</button>
+    </section>
 
 
-    <footer>
+    <h3 class="blog-tittle">Nuestro Blog</h2>
+
+    <div class="blog">
+      <div class="blog-content">
+        <div class="blog item">
+            <img src="./images/blog1.jpg" alt="">
+            <h4>Terraza en el techo de tu casa</h4>
+          
+        </div>
+        <div class="blog-item">
+            
+            <img src="./images/blog2.jpg" alt="">
+            <h4>Guia para la decoración de tu hogar</h4>
+            
+            
+        </div>
+        
+        
+      </div>
+      <div class="blog-comentarios">
+
+        <h3 class="comentario-tittle">Comentarios</h3>
+        <img src="./images/blog3.jpg" alt="">
+      </div>
+      
+    </div>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between">
             <nav>
-                <ul class="links">
-                    <li><a class href="#">Nosotros</a></li>
-                    <li><a class href="#">Anuncios</a></li>
-                    <li><a class href="#">Blog</a></li>
-                    <li><a class href="#">Contacto</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Anuncios</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
                 </ul>
             </nav>
-
-
-        <p>Todos los derechos reservados <date>2024</date> &copy;</p>
-
+            <p>Todos los derechos reservados <date>2024</date> &copy;</p>
+        </div>
     </footer>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
