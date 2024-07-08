@@ -12,19 +12,17 @@
 <body>
 
     <header class="bg-dark text-white py-3">
-        <div class="container-fluid">
-            <div class="logo d-flex">
+            <div class="logo">
                 <img src="./images/logo.svg" alt="" class="mr-3">
             </div>
             <nav>
-                <ul class="nav">
+                <ul>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Anuncios</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
         <h1 class="main-tittle">Venta de casas y departamentos Exclusivos de lujo</h1>
     </header>
 
@@ -56,15 +54,15 @@
         <section class="catalogo my-5">
             <h2 class="text-center">Casas y departamentos en venta</h2>
             <div class="row" id="catalogo-section">
-                
+              
             </div>
         </section>
     </div>
 
-    <section class="banner text-white  d-flex flex-column justify-content-center align-items-center">
+    <section class="banner text-white d-flex flex-column justify-content-center align-items-center">
         <h2>Encuentra la casa de tus sueños</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptatum veniam, aspernatur similique nesciunt aperiam illo iste ab id? Ratione provident recusandae atque quaerat nobis corrupti obcaecati sit impedit enim.</p>
-        <button class="btn btn-warning mt-3">Contactanos</button>
+        <button class="btn btn-warning mt-3">Contáctanos</button>
     </section>
 
     <h3 class="blog-tittle">Nuestro Blog</h3>
@@ -103,7 +101,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+    <script src="./js/index.js"></script>
+
     
     <template id="catalogo-template">
         <div class="col-md-4 mb-4">
@@ -112,13 +111,12 @@
                 <div class="card-body">
                     <h3 class="card-title"></h3>
                     <p class="card-text"></p>
+                    <p class="card-price text-success"></p>
                     <a href="#" class="btn btn-warning text-white mt-3">Ver propiedad</a>
                 </div>
             </div>
         </div>
     </template>
-
-    <script src="./js/index.js"></script>
 
 </body>
 
