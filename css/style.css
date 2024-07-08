@@ -11,7 +11,7 @@ body {
 
 header {
     background: grey;
-    background-image: url("./images/header.jpg");
+    background-image: url("../images/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -83,7 +83,7 @@ header nav ul li a {
 }
 
 .banner {
-    background-image: url(./images/encuentra.jpg);
+    background-image: url(../images/encuentra.jpg);
     background-size: cover;
     height: 20rem;
     width: 100%;
@@ -138,6 +138,43 @@ header nav ul li a {
 footer p {
     margin-top: 1rem;
 }
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.nosotros .col-md-4,
+.catalogo .col-md-4,
+.banner {
+    animation: slideIn 3s ease-in-out;
+}
+
+
+
+
 
 @media (max-width: 760px) {
     header {
